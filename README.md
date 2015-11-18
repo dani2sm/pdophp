@@ -4,11 +4,7 @@ PDO Database Class
 A database class for PHP-MySQL which uses the PDO extension.
 * Allows one connection with the database and deny duplicate connection, 
 * this speeds up to use the database and reduces the load on the server.
-##To use the class
-
-=======
-
-* To Arabic go to : http://www.phptricks.org/PDO-class  : Ù„Ù„Ø´Ø±Ø­ Ø¨Ø§Ù„Ù„ØºØ© Ø§Ù„Ø¹Ø±Ø¨ÙŠØ© ØªÙˆØ¬Ù‡ Ø§Ù„Ù‰
+======
 
 ##To use class
 
