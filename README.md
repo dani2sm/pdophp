@@ -48,8 +48,8 @@ suppose you want to insert (id, name, username, email) in ( users )table
 <?php
 $userInformation = [
 	'id'       => 1,
-	'name'     => 'Mohammad',
-	'username' => 'Anzawi',
+	'name'     => 'fouad',
+	'username' => 'DANI',
 	'email'    => 'email@example.com',
 ];
 
@@ -60,14 +60,14 @@ $db->table('users')->insert($userInformation );
 * $userInformation = [field name  , value]
 
 ###update
-suppose you want to update name for Mohammad
+suppose you want to update name for fouad
 
 * you can update where id or username or any field
 
 ```php
 <?php
 $newValues = [
-	'name' => 'Ahmed',
+	'name' => 'Karim',
 ];
 $db->->table('users')->update($newValues, ['id', '=', 1]);
 ```
@@ -75,22 +75,22 @@ $db->->table('users')->update($newValues, ['id', '=', 1]);
 ```php
 <?php
 $newValues = [
-	'name' => 'Ahmed',
+	'name' => 'Karim',
 ];
-$db->table('users')->update($newValues, ['username', '=', 'Mohammad']);
+$db->table('users')->update($newValues, ['username', '=', 'fouad']);
 ```
 
 ####Note
 You can update more than one field in the same array
 ```php
 $newValues = [
-	'name' => 'Ahmed',
+	'name' => 'Karim',
 	'username' => 'plapla',
 	'email' => 'pla@plalpa.com',
 	...
 ];
 
-$db->table('users')->update($newValues, ['username', '=', 'Mohammad']);
+$db->table('users')->update($newValues, ['username', '=', 'fouad']);
 ```
 update method look like this
 update->table('tablename')->update($newVaules = [], $whereCondition = []);
@@ -107,7 +107,7 @@ you can set where condition same update
 * delete('users', [field name  , operator  ,  value]);
 ```php
 <?php
-$db->table('users')->delete(['name', 'LIKE', 'mohammad)]);
+$db->table('users')->delete(['name', 'LIKE', 'fouad)]);
 ```
 ========================
 
@@ -115,7 +115,7 @@ $db->table('users')->delete(['name', 'LIKE', 'mohammad)]);
 You Can Insert , Update, Delete uses query method
 ```php
 <?php
-$db->query("INSERT INTO users (name) VALUES (?)", ['mohammad']);
+$db->query("INSERT INTO users (name) VALUES (?)", ['fouad']);
 
 $db->query("UPDATE  users SET (name =?) WHERE id=1", ['AIi']);
 ```
@@ -328,7 +328,3 @@ $db->table('users')->alterSchema(['drop', 'full_name'])->alter();
 =============================
 #License
 ### No License For This Class You are Free To Use it :)
-
-
-
-
